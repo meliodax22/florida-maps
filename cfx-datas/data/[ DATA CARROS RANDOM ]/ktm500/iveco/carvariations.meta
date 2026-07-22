@@ -1,0 +1,67 @@
+<?xml version="1.0"?>
+<CVehicleModelInfoVariation>
+	<variationData>
+	<Item>
+      <modelName>iveco</modelName>
+      <colors>
+        <Item>
+          <indices content="char_array">
+            1
+            1
+            1
+            1
+            1
+            1
+          </indices>
+          <liveries>
+            <Item value="false"/>
+            <Item value="false"/>
+            <Item value="false"/>
+            <Item value="false"/>
+            <Item value="false"/>
+            <Item value="false"/>
+            <Item value="false"/>
+            <Item value="false"/>
+            <Item value="false"/>
+            <Item value="false"/>
+            <Item value="false"/>
+            <Item value="false"/>
+            <Item value="false"/>
+            <Item value="false"/>
+            <Item value="false"/>
+            <Item value="false"/>
+            <Item value="false"/>
+            <Item value="false"/>
+            <Item value="false"/>
+            <Item value="false"/>
+            <Item value="false"/>
+            <Item value="false"/>
+            <Item value="false"/>
+            <Item value="false"/>
+            <Item value="false"/>
+            <Item value="false"/>
+            <Item value="false"/>
+            <Item value="false"/>
+            <Item value="false"/>
+            <Item value="false"/>
+          </liveries>
+        </Item>
+      </colors>
+      <kits>
+        <Item>0</Item>
+      </kits>
+      <windowsWithExposedEdges/>
+      <sn>03212401</sn>
+      <plateProbabilities>
+        <Probabilities>
+          <Item>
+            <Name>Police guv plate</Name>
+            <Value value="100"/>
+          </Item>
+        </Probabilities>
+      </plateProbabilities>
+      <lightSettings value="3"/>
+      <sirenSettings value="2021"/>
+    </Item>
+	</variationData>
+</CVehicleModelInfoVariation>

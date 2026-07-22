@@ -1,0 +1,726 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CVehicleMetadataMgr>
+
+<!---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!---------------------------------------------------------------------------------------------Funcao para Puxar as animacoes para dentro do Layout--------------------------------------------------------------------------------------------------------------->
+
+
+  <ClipSetMaps>
+  
+<!------------------------------------------------------------------------------- Animacao Assento Frontal Direito ------------------------------------------------------------------------------------------------------------------------------------------------->
+    <Item type="CClipSetMap">
+      <Name>INSIDE_CLIPSET_MAP_HELI_GAEP_SIDE_RIGHT</Name>
+      <Maps>
+        <Item>
+          <ClipSetId>anim@veh@helicopter@gaep@side@ps@enter_exit</ClipSetId>
+          <VarClipSetId>InsideVarClipSet</VarClipSetId>
+          <ConditionFlags />
+          <InformationFlags />
+        </Item>
+      </Maps>
+    </Item>
+<!------------------------------------------------------------------------------- Animacao Assento Frontal Esquerdo ------------------------------------------------------------------------------------------------------------------------------------------------->
+    <Item type="CClipSetMap">
+      <Name>INSIDE_CLIPSET_MAP_HELI_GAEP_SIDE_LEFT</Name>
+      <Maps>
+        <Item>
+          <ClipSetId>anim@veh@helicopter@gaep@side@ds@enter_exit</ClipSetId>
+          <VarClipSetId>InsideVarClipSet</VarClipSetId>
+          <ConditionFlags />
+          <InformationFlags />
+        </Item>
+      </Maps>
+    </Item>
+<!------------------------------------------------------------------------------- Animacao Assento Traseiro Esquerdo ------------------------------------------------------------------------------------------------------------------------------------------------->
+    <Item type="CClipSetMap">
+      <Name>INSIDE_CLIPSET_MAP_HELI_GAEP_REAR_LEFT</Name>
+      <Maps>
+        <Item>
+          <ClipSetId>anim@veh@helicopter@gaep@rear@ds@enter_exit</ClipSetId>
+          <VarClipSetId>InsideVarClipSet</VarClipSetId>
+          <ConditionFlags />
+          <InformationFlags />
+        </Item>
+      </Maps>
+    </Item>
+	
+   </ClipSetMaps>
+ 
+ 
+<!---------------------------------------------------------------------------------------------Funcao para Puxar as animacoes para dentro do Layout--------------------------------------------------------------------------------------------------------------->
+<!---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+
+
+
+
+<!----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!------------------------------------------------------------------------------- Configuração Geral dos Assentos ------------------------------------------------------------------------------------------------------------------------------------------------->
+
+
+  <VehicleLayoutInfos>
+
+      <Item type="CVehicleLayoutInfo">
+      <Name>LAYOUT_HELI_LITTLEBIRD</Name>
+      <Seats>
+       <Item>
+          <SeatInfo ref="SEAT_STANDARD_FRONT_LEFT" />
+          <SeatAnimInfo ref="SEAT_ANIM_HELI_FRONT_LEFT" />
+        </Item>
+        <Item>
+          <SeatInfo ref="SEAT_STANDARD_FRONT_RIGHT" />
+          <SeatAnimInfo ref="SEAT_ANIM_HELI_FRONT_RIGHT" />
+        </Item>
+		<!-- Assento lateral frontal esquerdo-->
+        <Item>
+          <SeatInfo ref="SEAT_HELI_SVOL_REAR_LEFT" />
+          <SeatAnimInfo ref="SEAT_ANIM_HELI_REAR_ATIRADOR_LEFT" />
+        </Item>
+		<!-- Assento lateral frontal direito-->
+        <Item>
+          <SeatInfo ref="SEAT_HELI_SVOL_REAR_RIGHT" />
+          <SeatAnimInfo ref="SEAT_ANIM_HELI_REAR_ATIRADOR_RIGHT" />
+        </Item>
+		<!-- Assentoo traseiro direito-->
+        <Item>
+          <SeatInfo ref="SEAT_EXTRA_NO_SHUFFLE_RIGHT_1" />
+          <SeatAnimInfo ref="SEAT_ANIM_HELI_LITTLEBIRD_REAR_RIGHT" />
+        </Item>
+		<!-- Assento lateral traseiro direito-->
+        <Item>
+          <SeatInfo ref="SEAT_EXTRA_NO_SHUFFLE_RIGHT_2" />
+          <SeatAnimInfo ref="SEAT_ANIM_HELI_REAR_ATIRADOR_RIGHT2" />
+        </Item>
+		<!-- Assento traseiro esquerdo-->
+        <Item>
+          <SeatInfo ref="SEAT_EXTRA_NO_SHUFFLE_LEFT_1" />
+          <SeatAnimInfo ref="SEAT_ANIM_HELI_LITTLEBIRD_REAR_LEFT" />
+        </Item>
+		<!-- Assento lateral traseiro esquerdo-->
+        <Item>
+          <SeatInfo ref="SEAT_EXTRA_NO_SHUFFLE_LEFT_2" />
+          <SeatAnimInfo ref="SEAT_ANIM_HELI_REAR_ATIRADOR_LEFT2" />
+        </Item>
+      </Seats>
+      <EntryPoints>
+         <Item>
+          <EntryPointInfo ref="ENTRY_POINT_STANDARD_FRONT_LEFT" />
+          <EntryPointAnimInfo ref="ENTRY_POINT_ANIM_HELI_SVOL_FRONT_LEFT" />
+        </Item>
+        <Item>
+          <EntryPointInfo ref="ENTRY_POINT_STANDARD_FRONT_RIGHT" />
+          <EntryPointAnimInfo ref="ENTRY_POINT_ANIM_HELI_SVOL_FRONT_RIGHT" />
+        </Item>
+		<!-- Assento lateral frontal esquerdo-->
+        <Item>
+          <EntryPointInfo ref="ENTRY_POINT_LITTLEBIRD_WARP_LEFT" />
+          <EntryPointAnimInfo ref="ENTRY_POINT_ANIM_HELI_LITTLEBIRD_LEFT" />
+        </Item>
+		<!-- Assento lateral frontal direito-->
+        <Item>
+          <EntryPointInfo ref="ENTRY_POINT_LITTLEBIRD_WARP_RIGHT" />
+          <EntryPointAnimInfo ref="ENTRY_POINT_ANIM_HELI_LITTLEBIRD_RIGHT" />
+        </Item>
+		<!-- Assento traseiro direito-->
+        <Item>
+          <EntryPointInfo ref="ENTRY_POINT_HELI_LITTLEBIRD_REAR_RIGHT" />
+          <EntryPointAnimInfo ref="ENTRY_POINT_ANIM_HELI_LITTLEBIRD_REAR_RIGHT" />
+        </Item>
+		<!-- Assento lateral traseiro direito-->
+		<Item>
+		  <EntryPointInfo ref="ENTRY_POINT_LITTLEBIRD_WARP_RIGHT2" />
+		  <EntryPointAnimInfo ref="ENTRY_POINT_ANIM_HELI_LITTLEBIRD_RIGHT2" />
+		</Item>
+		<!-- Assento traseiro esquerdo-->
+        <Item>
+          <EntryPointInfo ref="ENTRY_POINT_HELI_LITTLEBIRD_REAR_LEFT" />
+          <EntryPointAnimInfo ref="ENTRY_POINT_ANIM_HELI_LITTLEBIRD_REAR_LEFT" />
+        </Item>
+		<!-- Assento lateral traseiro esquerdo-->
+		<Item>
+		  <EntryPointInfo ref="ENTRY_POINT_LITTLEBIRD_WARP_LEFT2" />
+		  <EntryPointAnimInfo ref="ENTRY_POINT_ANIM_HELI_LITTLEBIRD_LEFT2" />
+		</Item>
+      </EntryPoints>
+      <LayoutFlags>StreamAnims UseFinerAlignTolerance Use2DBodyBlend</LayoutFlags>
+      <BicycleInfo ref="NULL" />
+      <HandsUpClipSetId>busted_vehicle_std</HandsUpClipSetId>
+      <SteeringWheelOffset x="0.000000" y="0.350000" z="0.320000" />
+    </Item>
+	
+  </VehicleLayoutInfos>	
+  
+  
+<!------------------------------------------------------------------------------- Configuração Geral dos Assentos ------------------------------------------------------------------------------------------------------------------------------------------------>
+<!---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+  
+  
+  
+  
+  
+<!----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!--------------------------------------------------------------------------------- Configuração das Coordenadas de entradas -------------------------------------------------------------------------------------------------------------------------------------->
+  
+
+  <VehicleEntryPointInfos>
+  
+	<!-- Layout traseiro direito-->
+    <Item type="CVehicleEntryPointInfo">
+      <Name>ENTRY_POINT_HELI_LITTLEBIRD_REAR_RIGHT</Name>
+      <DoorBoneName>door_pside_r</DoorBoneName>
+      <SecondDoorBoneName />
+      <DoorHandleBoneName>handle_pside_r</DoorHandleBoneName>
+      <WindowId>REAR_RIGHT</WindowId>
+      <VehicleSide>SIDE_RIGHT</VehicleSide>
+      <AccessableSeats>
+        <Item ref="SEAT_EXTRA_NO_SHUFFLE_RIGHT_1" />
+      </AccessableSeats>
+      <VehicleExtraPointsInfo ref="NULL" />
+      <Flags>BlockJackReactionUntilJackerIsReady AutoCloseThisDoor</Flags>
+      <BlockJackReactionSides>
+        <Item>SIDE_RIGHT</Item>
+      </BlockJackReactionSides>
+      <BreakoutTestPoint>POINT_TYPE_MAX</BreakoutTestPoint>
+    </Item>
+	<!-- Layout traseiro esquerdo-->
+    <Item type="CVehicleEntryPointInfo">
+      <Name>ENTRY_POINT_HELI_LITTLEBIRD_REAR_LEFT</Name>
+      <DoorBoneName>door_dside_r</DoorBoneName>
+      <SecondDoorBoneName />
+      <DoorHandleBoneName>handle_dside_r</DoorHandleBoneName>
+      <WindowId>REAR_LEFT</WindowId>
+      <VehicleSide>SIDE_LEFT</VehicleSide>
+      <AccessableSeats>
+        <Item ref="SEAT_EXTRA_NO_SHUFFLE_LEFT_1" />
+      </AccessableSeats>
+      <VehicleExtraPointsInfo ref="NULL" />
+      <Flags>BlockJackReactionUntilJackerIsReady AutoCloseThisDoor</Flags>
+      <BlockJackReactionSides>
+        <Item>SIDE_LEFT</Item>
+      </BlockJackReactionSides>
+      <BreakoutTestPoint>POINT_TYPE_MAX</BreakoutTestPoint>
+    </Item>
+	 <!-- Layout para ativar o assento extra lateral frontal direito-->
+    <Item type="CVehicleEntryPointInfo">
+	  <Name>ENTRY_POINT_LITTLEBIRD_WARP_RIGHT</Name>
+      <DoorBoneName />
+      <SecondDoorBoneName />
+      <DoorHandleBoneName />
+      <WindowId>INVALID</WindowId>
+      <VehicleSide>SIDE_RIGHT</VehicleSide>
+      <AccessableSeats>
+         <Item ref="SEAT_HELI_SVOL_REAR_RIGHT" />
+      </AccessableSeats>
+      <VehicleExtraPointsInfo ref="NULL" />
+      <Flags>BlockJackReactionUntilJackerIsReady </Flags>
+      <BlockJackReactionSides />
+    </Item>	
+	 <!-- Layout para ativar o assento extra lateral frontal esquerdo-->
+    <Item type="CVehicleEntryPointInfo">
+	  <Name>ENTRY_POINT_LITTLEBIRD_WARP_LEFT</Name>
+      <DoorBoneName />
+      <SecondDoorBoneName />
+      <DoorHandleBoneName />
+      <WindowId>INVALID</WindowId>
+      <VehicleSide>SIDE_LEFT</VehicleSide>
+      <AccessableSeats>
+         <Item ref="SEAT_HELI_SVOL_REAR_LEFT" />
+      </AccessableSeats>
+      <VehicleExtraPointsInfo ref="NULL" />
+      <Flags>BlockJackReactionUntilJackerIsReady </Flags>
+      <BlockJackReactionSides />
+    </Item>	
+	<!-- Layout para ativar o assento extra lateral traseiro direito-->
+    <Item type="CVehicleEntryPointInfo">
+	  <Name>ENTRY_POINT_LITTLEBIRD_WARP_RIGHT2</Name>
+      <DoorBoneName />
+      <SecondDoorBoneName />
+      <DoorHandleBoneName />
+      <WindowId>INVALID</WindowId>
+      <VehicleSide>SIDE_RIGHT</VehicleSide>
+      <AccessableSeats>
+         <Item ref="SEAT_EXTRA_NO_SHUFFLE_RIGHT_2" />
+      </AccessableSeats>
+      <VehicleExtraPointsInfo ref="NULL" />
+      <Flags>BlockJackReactionUntilJackerIsReady </Flags>
+      <BlockJackReactionSides />
+    </Item>
+	<!-- Layout para ativar o assento extra lateral traseiro esquerdo-->
+    <Item type="CVehicleEntryPointInfo">
+	  <Name>ENTRY_POINT_LITTLEBIRD_WARP_LEFT2</Name>
+      <DoorBoneName />
+      <SecondDoorBoneName />
+      <DoorHandleBoneName />
+      <WindowId>INVALID</WindowId>
+      <VehicleSide>SIDE_LEFT</VehicleSide>
+      <AccessableSeats>
+         <Item ref="SEAT_EXTRA_NO_SHUFFLE_LEFT_2" />
+      </AccessableSeats>
+      <VehicleExtraPointsInfo ref="NULL" />
+      <Flags>BlockJackReactionUntilJackerIsReady </Flags>
+      <BlockJackReactionSides />
+    </Item>
+	
+  </VehicleEntryPointInfos>
+  
+  
+<!--------------------------------------------------------------------------------- Configuração das Coordenadas de entradas -------------------------------------------------------------------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->  
+  
+  
+  
+  
+  
+<!----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!--------------------------------------------------------------------------------- Configuração das Animações de entrada/saída ----------------------------------------------------------------------------------------------------------------------------------->
+
+  
+  <VehicleEntryPointAnimInfos>
+  
+	<!-- Animação para fazer sair/entrar assento lateral frontal direito -->
+    <Item type="CVehicleEntryPointAnimInfo">
+      <Name>ENTRY_POINT_ANIM_HELI_LITTLEBIRD_RIGHT</Name>
+      <CommonClipSetMap ref="COMMON_CLIPSET_MAP_TRUCK_RIGHT" />
+      <EntryClipSetMap ref="ENTRY_CLIPSET_MAP_HELI_REAR_RIGHT" />
+      <ExitClipSetMap ref="EXIT_CLIPSET_MAP_HELI_REAR_RIGHT" />
+      <AlternateTryLockedDoorClipId />
+      <AlternateForcedEntryClipId />
+      <AlternateJackFromOutSideClipId />
+      <AlternateBeJackedFromOutSideClipId />
+      <AlternateEntryPointClipSetId />
+      <EnterVehicleMoveNetwork>ENTER_VEHICLE_STD</EnterVehicleMoveNetwork>
+      <EntryTranslation x="1.061200" y="-0.232100" z="0.043100" />
+      <OpenDoorTranslation x="0.000000" y="0.000000" />
+      <OpenDoorHeadingChange value="-1.570000" />
+      <EntryHeadingChange value="1.570000" />
+      <ExtraZForWaterEntry value="-5.000000" />
+      <EntryPointFlags>JackIncludesGetIn UseGetUpAfterJack JackVariationsIncludeGetIn DeadJackIncludesGetIn HasGetInFromWater</EntryPointFlags>
+      <EntryAnimVariations ref="ENTRY_ANIM_VARIATIONS_HELICOPTER_REAR_RIGHT" />
+    </Item>
+	<!-- Animação para fazer sair/entrar assento lateral frontal esquerdo -->
+    <Item type="CVehicleEntryPointAnimInfo">
+      <Name>ENTRY_POINT_ANIM_HELI_LITTLEBIRD_LEFT</Name>
+      <CommonClipSetMap ref="COMMON_CLIPSET_MAP_TRUCK_LEFT" />
+      <EntryClipSetMap ref="ENTRY_CLIPSET_MAP_HELI_REAR_LEFT" />
+      <ExitClipSetMap ref="EXIT_CLIPSET_MAP_HELI_REAR_LEFT" />
+      <AlternateTryLockedDoorClipId />
+      <AlternateForcedEntryClipId />
+      <AlternateJackFromOutSideClipId />
+      <AlternateBeJackedFromOutSideClipId />
+      <AlternateEntryPointClipSetId />
+      <EnterVehicleMoveNetwork>ENTER_VEHICLE_STD</EnterVehicleMoveNetwork>
+      <EntryTranslation x="-1.169200" y="-0.376600" z="0.053800" />
+      <OpenDoorTranslation x="0.000000" y="0.000000" />
+      <OpenDoorHeadingChange value="1.570000" />
+      <EntryHeadingChange value="-1.570000" />
+      <ExtraZForWaterEntry value="0.000000" />
+      <EntryPointFlags>JackIncludesGetIn UseGetUpAfterJack JackVariationsIncludeGetIn DeadJackIncludesGetIn HasGetInFromWater</EntryPointFlags>
+      <EntryAnimVariations ref="ENTRY_ANIM_VARIATIONS_HELICOPTER_REAR_LEFT" />
+    </Item>
+	<!-- Animação para fazer sair no atirador traseiro direito -->
+    <Item type="CVehicleEntryPointAnimInfo">
+      <Name>ENTRY_POINT_ANIM_HELI_LITTLEBIRD_REAR_RIGHT</Name>
+      <CommonClipSetMap ref="COMMON_CLIPSET_MAP_TRUCK_RIGHT" />
+      <EntryClipSetMap ref="ENTRY_CLIPSET_MAP_HELI_SVOL_FRONT_RIGHT" />
+      <ExitClipSetMap ref="EXIT_CLIPSET_MAP_HELI_SVOL_FRONT_RIGHT" />
+      <AlternateTryLockedDoorClipId />
+      <AlternateForcedEntryClipId />
+      <AlternateJackFromOutSideClipId />
+      <AlternateBeJackedFromOutSideClipId />
+      <AlternateEntryPointClipSetId />
+      <EnterVehicleMoveNetwork>ENTER_VEHICLE_STD</EnterVehicleMoveNetwork>
+      <EntryTranslation x="1.416400" y="-0.576000" z="0.000000" />
+      <OpenDoorTranslation x="0.000000" y="0.000000" />
+      <OpenDoorHeadingChange value="0.000000" />
+      <EntryHeadingChange value="1.570000" />
+      <ExtraZForMPPlaneWarp value="0.000000" />
+      <EntryPointFlags>JackIncludesGetIn UseGetUpAfterJack DeadJackIncludesGetIn </EntryPointFlags>
+      <EntryAnimVariations ref="ENTRY_ANIM_VARIATIONS_HELICOPTER_FRONT_RIGHT" />
+      <NMJumpFromVehicleTuningSet />
+    </Item>
+    <!-- Animação para fazer sair no atirador traseiro esquerdo -->
+    <Item type="CVehicleEntryPointAnimInfo">
+      <Name>ENTRY_POINT_ANIM_HELI_LITTLEBIRD_REAR_LEFT</Name>
+      <CommonClipSetMap ref="COMMON_CLIPSET_MAP_TRUCK_LEFT" />
+      <EntryClipSetMap ref="ENTRY_CLIPSET_MAP_HELI_FRONT_LEFT" />
+      <ExitClipSetMap ref="EXIT_CLIPSET_MAP_HELI_FRONT_LEFT" />
+      <AlternateTryLockedDoorClipId />
+      <AlternateForcedEntryClipId />
+      <AlternateJackFromOutSideClipId />
+      <AlternateBeJackedFromOutSideClipId />
+      <AlternateEntryPointClipSetId />
+      <EnterVehicleMoveNetwork>ENTER_VEHICLE_STD</EnterVehicleMoveNetwork>
+      <EntryTranslation x="-1.550000" y="-0.546000" z="0.000000" />
+      <OpenDoorTranslation x="0.000000" y="0.000000" />
+      <OpenDoorHeadingChange value="0.000000" />
+      <EntryHeadingChange value="-1.570000" />
+      <ExtraZForMPPlaneWarp value="0.000000" />
+      <EntryPointFlags>JackIncludesGetIn UseGetUpAfterJack DeadJackIncludesGetIn  </EntryPointFlags>
+      <EntryAnimVariations ref="ENTRY_ANIM_VARIATIONS_HELICOPTER_FRONT_LEFT" />
+      <NMJumpFromVehicleTuningSet />
+    </Item>
+    <!-- Animação para fazer sair do assento lateral traseiro direito -->
+    <Item type="CVehicleEntryPointAnimInfo">
+      <Name>ENTRY_POINT_ANIM_HELI_LITTLEBIRD_RIGHT2</Name>
+      <CommonClipSetMap ref="COMMON_CLIPSET_MAP_TRUCK_RIGHT" />
+      <EntryClipSetMap ref="ENTRY_CLIPSET_MAP_HELI_FROGGER_REAR_RIGHT" />
+      <ExitClipSetMap ref="EXIT_CLIPSET_MAP_HELI_FROGGER_REAR_RIGHT" />
+      <AlternateTryLockedDoorClipId />
+      <AlternateForcedEntryClipId />
+      <AlternateJackFromOutSideClipId />
+      <AlternateBeJackedFromOutSideClipId />
+      <AlternateEntryPointClipSetId />
+      <EnterVehicleMoveNetwork>ENTER_VEHICLE_STD</EnterVehicleMoveNetwork>
+      <EntryTranslation x="1.061200" y="-0.232100" z="0.043100" />
+      <OpenDoorTranslation x="0.000000" y="0.000000" />
+      <OpenDoorHeadingChange value="-1.570000" />
+      <EntryHeadingChange value="1.570000" />
+      <ExtraZForWaterEntry value="-5.000000" />
+      <EntryPointFlags>JackIncludesGetIn UseGetUpAfterJack JackVariationsIncludeGetIn DeadJackIncludesGetIn NavigateToWarpEntryPoint HasGetInFromWater</EntryPointFlags>
+      <EntryAnimVariations ref="ENTRY_ANIM_VARIATIONS_HELICOPTER_REAR_RIGHT" />
+    </Item>
+    <!-- Animação para fazer sair do assento lateral traseiro esquerdo -->
+    <Item type="CVehicleEntryPointAnimInfo">
+      <Name>ENTRY_POINT_ANIM_HELI_LITTLEBIRD_LEFT2</Name>
+      <CommonClipSetMap ref="COMMON_CLIPSET_MAP_TRUCK_LEFT" />
+      <EntryClipSetMap ref="ENTRY_CLIPSET_MAP_HELI_FROGGER_REAR_LEFT" />
+      <ExitClipSetMap ref="EXIT_CLIPSET_MAP_HELI_FROGGER_REAR_LEFT" />
+      <AlternateTryLockedDoorClipId />
+      <AlternateForcedEntryClipId />
+      <AlternateJackFromOutSideClipId />
+      <AlternateBeJackedFromOutSideClipId />
+      <AlternateEntryPointClipSetId />
+      <EnterVehicleMoveNetwork>ENTER_VEHICLE_STD</EnterVehicleMoveNetwork>
+      <EntryTranslation x="-1.169200" y="-0.376600" z="0.053800" />
+      <OpenDoorTranslation x="0.000000" y="0.000000" />
+      <OpenDoorHeadingChange value="1.570000" />
+      <EntryHeadingChange value="-1.570000" />
+      <ExtraZForWaterEntry value="0.000000" />
+      <EntryPointFlags>JackIncludesGetIn UseGetUpAfterJack JackVariationsIncludeGetIn DeadJackIncludesGetIn NavigateToWarpEntryPoint HasGetInFromWater</EntryPointFlags>
+      <EntryAnimVariations ref="ENTRY_ANIM_VARIATIONS_HELICOPTER_REAR_LEFT" />
+    </Item>
+	
+  </VehicleEntryPointAnimInfos>
+
+
+<!--------------------------------------------------------------------------------- Configuração das Animações de entrada/saída ----------------------------------------------------------------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+
+
+
+ 
+<!----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!--------------------------------------------------------------------------------- Configuração das Animação de DriveBy/AnimaçaoDoAssento/ComportamentoDosAssento ------------------------------------------------------------------------------------------------>
+
+
+  <VehicleSeatAnimInfos>
+  
+	  <!-- Layout para restringir o angulo de tiro do atirador lateral frontal direito -->
+	<Item type="CVehicleSeatAnimInfo">
+      <Name>SEAT_ANIM_HELI_REAR_ATIRADOR_RIGHT</Name>
+		<DriveByInfo ref="DRIVEBY_HELI_LITTLEBIRD_REAR_RIGHT" />
+		<InsideClipSetMap ref="INSIDE_CLIPSET_MAP_HELI_GAEP_SIDE_RIGHT" />
+		<PanicClipSet />
+		<AgitatedClipSet />
+		<DuckedClipSet />
+		<FemaleClipSet />
+		<LowLODIdleAnim>HELI_REAR_PS_IDLE</LowLODIdleAnim>
+		<SeatAmbientContext />
+		<InVehicleMoveNetwork>VEHICLE_DEFAULT</InVehicleMoveNetwork>
+		<SeatAnimFlags>UseStandardInVehicleAnims PreventShuffleJack FallsOutWhenDead WeaponRemainsVisible </SeatAnimFlags>
+		<SteeringSmoothing value="0.100000" />
+		<ExitToAimInfoName />
+		<MaleGestureClipSetId />
+		<FemaleGestureClipSetId />
+    </Item>
+	  <!-- Layout para restringir o angulo de tiro do atirador lateral frontal esquerdo -->
+    <Item type="CVehicleSeatAnimInfo">
+      <Name>SEAT_ANIM_HELI_REAR_ATIRADOR_LEFT</Name>
+      <DriveByInfo ref="DRIVEBY_HELI_LITTLEBIRD_REAR_LEFT" />
+      <InsideClipSetMap ref="INSIDE_CLIPSET_MAP_HELI_GAEP_SIDE_LEFT" />
+      <PanicClipSet />
+      <AgitatedClipSet />
+	  <DuckedClipSet />
+      <LowLODIdleAnim>HELI_REAR_DS_IDLE</LowLODIdleAnim>
+      <SeatAmbientContext />
+      <InVehicleMoveNetwork>VEHICLE_DEFAULT</InVehicleMoveNetwork>
+      <SeatAnimFlags>UseStandardInVehicleAnims PreventShuffleJack FallsOutWhenDead WeaponRemainsVisible </SeatAnimFlags>
+      <SteeringSmoothing value="0.100000" />
+      <ExitToAimInfoName />
+      <MaleGestureClipSetId />
+      <FemaleGestureClipSetId />
+    </Item>
+	  <!-- Layout para restringir o angulo de tiro do atirador esquerdo traseiro -->
+    <Item type="CVehicleSeatAnimInfo">
+      <Name>SEAT_ANIM_HELI_LITTLEBIRD_REAR_LEFT</Name>
+      <DriveByInfo ref="DRIVEBY_HELI_LITTLEBIRD_REAR_LEFT2" />
+      <InsideClipSetMap ref="INSIDE_CLIPSET_MAP_HELI_GAEP_REAR_LEFT" />
+      <PanicClipSet />
+      <AgitatedClipSet />
+      <DuckedClipSet />
+      <FemaleClipSet />
+      <LowLODIdleAnim>HELI_REAR_DS_IDLE</LowLODIdleAnim>
+      <SeatAmbientContext />
+      <InVehicleMoveNetwork>VEHICLE_DEFAULT</InVehicleMoveNetwork>
+      <SeatAnimFlags>UseStandardInVehicleAnims PreventShuffleJack WeaponRemainsVisible</SeatAnimFlags>
+      <SteeringSmoothing value="0.100000" />
+      <ExitToAimInfoName />
+      <MaleGestureClipSetId />
+      <FemaleGestureClipSetId />
+      <FPSMinSteeringRateOverride value="-1.000000" />
+      <FPSMaxSteeringRateOverride value="-1.000000" />
+      <SeatCollisionBoundsOffset x="0.000000" y="0.000000" z="0.000000" />
+    </Item>
+	  <!-- Layout para restringir o angulo de tiro do atirador direito traseiro -->
+      <Item type="CVehicleSeatAnimInfo">
+      <Name>SEAT_ANIM_HELI_LITTLEBIRD_REAR_RIGHT</Name>
+      <DriveByInfo ref="DRIVEBY_HELI_LITTLEBIRD_REAR_RIGHT2" />
+      <InsideClipSetMap ref="INSIDE_CLIPSET_MAP_HELI_SVOL_REAR_RIGHT" />
+      <PanicClipSet />
+      <AgitatedClipSet />
+      <DuckedClipSet />
+      <FemaleClipSet />
+      <LowLODIdleAnim>HELI_REAR_PS_IDLE</LowLODIdleAnim>
+      <SeatAmbientContext />
+      <InVehicleMoveNetwork>VEHICLE_DEFAULT</InVehicleMoveNetwork>
+      <SeatAnimFlags>UseStandardInVehicleAnims PreventShuffleJack </SeatAnimFlags>
+      <SteeringSmoothing value="0.100000" />
+      <ExitToAimInfoName />
+      <MaleGestureClipSetId />
+      <FemaleGestureClipSetId />
+      <FPSMinSteeringRateOverride value="-1.000000" />
+      <FPSMaxSteeringRateOverride value="-1.000000" />
+      <SeatCollisionBoundsOffset x="0.000000" y="0.000000" z="0.000000" />
+    </Item>
+	  <!-- Layout para cancelar a função de atirar do assento lateral traseiro direito -->
+    <Item type="CVehicleSeatAnimInfo">
+      <Name>SEAT_ANIM_HELI_REAR_ATIRADOR_RIGHT2</Name>
+      <DriveByInfo ref="DRIVEBY_HELI_LITTLERBIRD_FRONT_RIGHT" />
+      <InsideClipSetMap ref="INSIDE_CLIPSET_MAP_HELI_GAEP_REAR_LEFT" />
+      <PanicClipSet />
+      <AgitatedClipSet />
+      <DuckedClipSet />
+      <FemaleClipSet />
+      <LowLODIdleAnim>HELI_REAR_PS_IDLE</LowLODIdleAnim>
+      <SeatAmbientContext />
+      <InVehicleMoveNetwork>VEHICLE_DEFAULT</InVehicleMoveNetwork>
+      <SeatAnimFlags>UseStandardInVehicleAnims PreventShuffleJack IsLowerPrioritySeatInSP FallsOutWhenDead WeaponRemainsVisible  </SeatAnimFlags>
+      <SteeringSmoothing value="0.100000" />
+      <ExitToAimInfoName />
+      <MaleGestureClipSetId />
+      <FemaleGestureClipSetId />
+      <FPSMinSteeringRateOverride value="-1.000000" />
+      <FPSMaxSteeringRateOverride value="-1.000000" />
+      <SeatCollisionBoundsOffset x="0.000000" y="0.000000" z="0.000000" />
+    </Item>
+	  <!-- Layout para cancelar a função de atirar do assento lateral traseiro esquerdo -->
+    <Item type="CVehicleSeatAnimInfo">
+      <Name>SEAT_ANIM_HELI_REAR_ATIRADOR_LEFT2</Name>
+      <DriveByInfo ref="DRIVEBY_HELI_LITTLERBIRD_FRONT_RIGHT" />
+      <InsideClipSetMap ref="INSIDE_CLIPSET_MAP_HELI_GAEP_REAR_LEFT" />
+      <PanicClipSet />
+      <AgitatedClipSet />
+      <DuckedClipSet />
+      <FemaleClipSet />
+      <AltLowriderLeanClipSet />
+      <LowLODIdleAnim>HELI_REAR_DS_IDLE</LowLODIdleAnim>
+      <SeatAmbientContext />
+      <InVehicleMoveNetwork>VEHICLE_DEFAULT</InVehicleMoveNetwork>
+      <SeatAnimFlags>UseStandardInVehicleAnims PreventShuffleJack IsLowerPrioritySeatInSP FallsOutWhenDead WeaponRemainsVisible </SeatAnimFlags>
+      <SteeringSmoothing value="0.100000" />
+      <ExitToAimInfoName />
+      <MaleGestureClipSetId />
+      <FemaleGestureClipSetId />
+      <FPSMinSteeringRateOverride value="-1.000000" />
+      <FPSMaxSteeringRateOverride value="-1.000000" />
+      <SeatCollisionBoundsOffset x="0.000000" y="0.000000" z="0.000000" />
+    </Item>
+	
+  </VehicleSeatAnimInfos>
+ 
+ 
+<!--------------------------------------------------------------------------------- Configuração das Animação de DriveBy/AnimaçaoDoAssento/ComportamentoDosAssento ------------------------------------------------------------------------------------------------>
+<!----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+  
+  
+  
+  
+  
+<!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------>
+<!-------------------------------------------------------------------------------- Configurações do Modo DriveBy e Angulação dos mesmos ---------------------------------------------------------------------------------------------------------------------------->
+  
+  
+  <VehicleDriveByInfos>
+  
+  	  <!-- Angulo de restrição do atirador lateral direito frontal - 180° graus de disparo + 20° frontais de disparo -->
+	<Item type="CVehicleDriveByInfo">
+		<Name>DRIVEBY_HELI_LITTLEBIRD_REAR_RIGHT</Name>
+		<MinAimSweepHeadingAngleDegs value="6.000000" />
+		<MaxAimSweepHeadingAngleDegs value="220.000000" />
+		<FirstPersonMinAimSweepHeadingAngleDegs value="0.000000" />
+		<FirstPersonMaxAimSweepHeadingAngleDegs value="170.000000" />
+		<FirstPersonUnarmedMinAimSweepHeadingAngleDegs value="0.000000" />
+		<FirstPersonUnarmedMaxAimSweepHeadingAngleDegs value="170.000000" />
+		<MinRestrictedAimSweepHeadingAngleDegs value="6.000000" />
+		<MaxRestrictedAimSweepHeadingAngleDegs value="220.000000" />
+		<MinSmashWindowAngleDegs value="0.000000" />
+		<MaxSmashWindowAngleDegs value="0.000000" />
+		<MinSmashWindowAngleFirstPersonDegs value="0.000000" />
+		<MaxSmashWindowAngleFirstPersonDegs value="0.000000" />
+		<MaxSpeedParam value="0.500000" />
+		<MaxLongitudinalLeanBlendWeightDelta value="0.250000" />
+		<MaxLateralLeanBlendWeightDelta value="0.250000" />
+		<ApproachSpeedToWithinMaxBlendDelta value="1.000000" />
+		<SpineAdditiveBlendInDelay value="0.050000" />
+		<SpineAdditiveBlendInDurationStill value="0.150000" />
+		<SpineAdditiveBlendInDuration value="0.750000" />
+		<SpineAdditiveBlendOutDelay value="0.000000" />
+		<SpineAdditiveBlendOutDuration value="0.500000" />
+		<DriveByAnimInfos>
+			<Item ref="TRUCK_PHANTOMBULL_DB_ANIM_INFO_ONE_HANDED_RPS" />
+			<Item ref="TRUCK_PHANTOMBULL_DB_ANIM_INFO_TWO_HANDED_RPS" />
+			<Item ref="HELI_DB_ANIM_INFO_RPG_RPS" />
+		</DriveByAnimInfos>
+      <DriveByCamera>FROGGER_REAR_RIGHT_PASSENGER_AIM_CAMERA</DriveByCamera>
+      <DriveByFlags>DampenRecoil UseThreeAnimIntroOutro UseBlockingAnimsOutsideAimRange AllowSingleSideOvershoot UsePedAsCamEntity</DriveByFlags>
+	</Item>
+  	  <!-- Angulo de restrição do atirador lateral esquerdo frontal - 180° graus de disparo + 20° frontais de disparo -->
+    <Item type="CVehicleDriveByInfo">
+      <Name>DRIVEBY_HELI_LITTLEBIRD_REAR_LEFT</Name>
+      <MinAimSweepHeadingAngleDegs value="-210.000000" />
+      <MaxAimSweepHeadingAngleDegs value="-9.000000" />
+	  <FirstPersonMinAimSweepHeadingAngleDegs value="-170.000000" />
+	  <FirstPersonMaxAimSweepHeadingAngleDegs value="0.000000" />
+	  <FirstPersonUnarmedMinAimSweepHeadingAngleDegs value="-170.000000" />
+	  <FirstPersonUnarmedMaxAimSweepHeadingAngleDegs value="0.000000" />
+      <MinRestrictedAimSweepHeadingAngleDegs value="-210.000000" />
+      <MaxRestrictedAimSweepHeadingAngleDegs value="-9.000000" />
+      <MinSmashWindowAngleDegs value="0.000000" />
+      <MaxSmashWindowAngleDegs value="0.000000" />
+	  <MinSmashWindowAngleFirstPersonDegs value="0.000000" />
+      <MaxSmashWindowAngleFirstPersonDegs value="0.000000" />
+      <MaxSpeedParam value="0.500000" />
+      <MaxLongitudinalLeanBlendWeightDelta value="0.250000" />
+      <MaxLateralLeanBlendWeightDelta value="0.250000" />
+      <ApproachSpeedToWithinMaxBlendDelta value="1.000000" />
+      <SpineAdditiveBlendInDelay value="0.050000" />
+      <SpineAdditiveBlendInDurationStill value="0.150000" />
+      <SpineAdditiveBlendInDuration value="0.750000" />
+      <SpineAdditiveBlendOutDelay value="0.000000" />
+      <SpineAdditiveBlendOutDuration value="0.500000" />
+      <DriveByAnimInfos>
+			<Item ref="TRUCK_PHANTOMBULL_DB_ANIM_INFO_ONE_HANDED_RDS" />
+			<Item ref="TRUCK_PHANTOMBULL_DB_ANIM_INFO_TWO_HANDED_RDS" />
+			<Item ref="HELI_DB_ANIM_INFO_RPG_RDS" />
+      </DriveByAnimInfos>
+      <DriveByCamera>FROGGER_REAR_LEFT_PASSENGER_AIM_CAMERA</DriveByCamera>
+      <DriveByFlags>DampenRecoil UseThreeAnimIntroOutro UseBlockingAnimsOutsideAimRange AllowSingleSideOvershoot UsePedAsCamEntity</DriveByFlags>
+    </Item>
+  	  <!-- Angulo de restrição do atirador traseiro direito 90° de disparo  -->
+    <Item type="CVehicleDriveByInfo">
+      <Name>DRIVEBY_HELI_LITTLEBIRD_REAR_RIGHT2</Name>
+      <MinAimSweepHeadingAngleDegs value="20.000000" />
+      <MaxAimSweepHeadingAngleDegs value="200.000000" />
+      <FirstPersonMinAimSweepHeadingAngleDegs value="-180.000000" />
+      <FirstPersonMaxAimSweepHeadingAngleDegs value="180.000000" />
+      <FirstPersonUnarmedMinAimSweepHeadingAngleDegs value="-180.000000" />
+      <FirstPersonUnarmedMaxAimSweepHeadingAngleDegs value="180.000000" />
+      <MinRestrictedAimSweepHeadingAngleDegs value="20.000000" />
+      <MaxRestrictedAimSweepHeadingAngleDegs value="200.000000" />
+      <MinSmashWindowAngleDegs value="1.000000" />
+      <MaxSmashWindowAngleDegs value="1.000000" />
+      <MinSmashWindowAngleFirstPersonDegs value="0.000000" />
+      <MaxSmashWindowAngleFirstPersonDegs value="0.000000" />
+      <MaxSpeedParam value="0.500000" />
+      <MaxLongitudinalLeanBlendWeightDelta value="0.250000" />
+      <MaxLateralLeanBlendWeightDelta value="0.250000" />
+      <ApproachSpeedToWithinMaxBlendDelta value="1.000000" />
+      <SpineAdditiveBlendInDelay value="0.050000" />
+      <SpineAdditiveBlendInDurationStill value="0.150000" />
+      <SpineAdditiveBlendInDuration value="0.750000" />
+      <SpineAdditiveBlendOutDelay value="0.000000" />
+      <SpineAdditiveBlendOutDuration value="0.500000" />
+      <MinUnarmedDrivebyYawIfWindowRolledUp value="-3.140000" />
+      <MaxUnarmedDrivebyYawIfWindowRolledUp value="3.140000" />
+      <DriveByAnimInfos>
+        <Item ref="HELI_FROGGER_DB_ANIM_INFO_ONE_HANDED_RPS" />
+        <Item ref="HELI_FROGGER_DB_ANIM_INFO_TWO_HANDED_RPS" />
+      </DriveByAnimInfos>
+      <DriveByCamera>FROGGER_REAR_RIGHT_PASSENGER_AIM_CAMERA</DriveByCamera>
+      <DriveByFlags>DampenRecoil NeedToOpenDoors UseThreeAnimIntroOutro AllowSingleSideOvershoot</DriveByFlags>
+    </Item>
+  	  <!-- Angulo de restrição do atirador traseiro esquerdo - 100° de disparo  -->
+    <Item type="CVehicleDriveByInfo">
+      <Name>DRIVEBY_HELI_LITTLEBIRD_REAR_LEFT2</Name>
+      <MinAimSweepHeadingAngleDegs value="-190.000000" />
+      <MaxAimSweepHeadingAngleDegs value="-18.000000" />
+      <FirstPersonMinAimSweepHeadingAngleDegs value="-180.000000" />
+      <FirstPersonMaxAimSweepHeadingAngleDegs value="180.000000" />
+      <FirstPersonUnarmedMinAimSweepHeadingAngleDegs value="-180.000000" />
+      <FirstPersonUnarmedMaxAimSweepHeadingAngleDegs value="180.000000" />
+      <MinRestrictedAimSweepHeadingAngleDegs value="-190.000000" />
+      <MaxRestrictedAimSweepHeadingAngleDegs value="-18.000000" />
+      <MinSmashWindowAngleDegs value="-1.000000" />
+      <MaxSmashWindowAngleDegs value="-1.000000" />
+      <MinSmashWindowAngleFirstPersonDegs value="0.000000" />
+      <MaxSmashWindowAngleFirstPersonDegs value="0.000000" />
+      <MaxSpeedParam value="0.500000" />
+      <MaxLongitudinalLeanBlendWeightDelta value="0.250000" />
+      <MaxLateralLeanBlendWeightDelta value="0.250000" />
+      <ApproachSpeedToWithinMaxBlendDelta value="1.000000" />
+      <SpineAdditiveBlendInDelay value="0.050000" />
+      <SpineAdditiveBlendInDurationStill value="0.150000" />
+      <SpineAdditiveBlendInDuration value="0.750000" />
+      <SpineAdditiveBlendOutDelay value="0.000000" />
+      <SpineAdditiveBlendOutDuration value="0.500000" />
+      <MinUnarmedDrivebyYawIfWindowRolledUp value="-3.140000" />
+      <MaxUnarmedDrivebyYawIfWindowRolledUp value="3.140000" />
+      <DriveByAnimInfos>
+        <Item ref="HELI_FROGGER_DB_ANIM_INFO_ONE_HANDED_RDS" />
+        <Item ref="HELI_FROGGER_DB_ANIM_INFO_TWO_HANDED_RDS" />
+      </DriveByAnimInfos>
+      <DriveByCamera>FROGGER_REAR_LEFT_PASSENGER_AIM_CAMERA</DriveByCamera>
+      <DriveByFlags>DampenRecoil NeedToOpenDoors UseThreeAnimIntroOutro UsePedAsCamEntity AllowSingleSideOvershoot</DriveByFlags>
+    </Item>
+  	  <!-- Desabilitar a funcao de atirar dos 2 assentoos laterais traseiros  -->
+    <Item type="CVehicleDriveByInfo">
+      <Name>DRIVEBY_HELI_LITTLERBIRD_FRONT_RIGHT</Name>
+		<MinAimSweepHeadingAngleDegs value="6.000000" />
+		<MaxAimSweepHeadingAngleDegs value="220.000000" />
+		<FirstPersonMinAimSweepHeadingAngleDegs value="0.000000" />
+		<FirstPersonMaxAimSweepHeadingAngleDegs value="170.000000" />
+		<FirstPersonUnarmedMinAimSweepHeadingAngleDegs value="0.000000" />
+		<FirstPersonUnarmedMaxAimSweepHeadingAngleDegs value="170.000000" />
+		<MinRestrictedAimSweepHeadingAngleDegs value="6.000000" />
+		<MaxRestrictedAimSweepHeadingAngleDegs value="220.000000" />
+		<MinSmashWindowAngleDegs value="0.000000" />
+		<MaxSmashWindowAngleDegs value="0.000000" />
+		<MinSmashWindowAngleFirstPersonDegs value="0.000000" />
+		<MaxSmashWindowAngleFirstPersonDegs value="0.000000" />
+		<MaxSpeedParam value="0.500000" />
+		<MaxLongitudinalLeanBlendWeightDelta value="0.250000" />
+		<MaxLateralLeanBlendWeightDelta value="0.250000" />
+		<ApproachSpeedToWithinMaxBlendDelta value="1.000000" />
+		<SpineAdditiveBlendInDelay value="0.050000" />
+		<SpineAdditiveBlendInDurationStill value="0.150000" />
+		<SpineAdditiveBlendInDuration value="0.750000" />
+		<SpineAdditiveBlendOutDelay value="0.000000" />
+		<SpineAdditiveBlendOutDuration value="0.500000" />
+		<DriveByAnimInfos>
+        <Item ref="HELI_FROGGER_DB_ANIM_INFO_ONE_HANDED_RPS" />
+        <Item ref="HELI_FROGGER_DB_ANIM_INFO_TWO_HANDED_RPS" />
+      </DriveByAnimInfos>
+      <DriveByCamera />
+      <DriveByFlags>DampenRecoil UseThreeAnimIntroOutro UseBlockingAnimsOutsideAimRange AllowSingleSideOvershoot UsePedAsCamEntity</DriveByFlags>
+    </Item>
+	
+	
+	
+   </VehicleDriveByInfos>
+  
+  
+<!-------------------------------------------------------------------------------- Configurações do Modo DriveBy e Angulação dos mesmos ---------------------------------------------------------------------------------------------------------------------------->
+<!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------>
+  
+</CVehicleMetadataMgr>
