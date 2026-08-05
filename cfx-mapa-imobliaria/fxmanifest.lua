@@ -1,3 +1,6 @@
+dependency "PL_PROTECT"
+client_script "@PL_PROTECT/lib/plclient.lua"
+server_script "@PL_PROTECT/lib/plserver.lua"
 
 -- Decrypted by discord.gg/EGxs2eXQta & discord.gg/fxd
 -- Decrypted by discord.gg/EGxs2eXQta & discord.gg/fxd
